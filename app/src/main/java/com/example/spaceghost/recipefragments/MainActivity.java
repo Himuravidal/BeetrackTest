@@ -1,6 +1,7 @@
 package com.example.spaceghost.recipefragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -34,8 +35,10 @@ public class MainActivity extends AppCompatActivity implements ListFragment.OnRe
     @Override
     public void onListRecipeSelected(int index) {
 
+        Intent intent = new Intent(this, DetailsActivity.class);
+        startActivity(intent);
 
-        ViewPagerFragment viewPagerFragment = new ViewPagerFragment();
+        /*ViewPagerFragment viewPagerFragment = new ViewPagerFragment();
 
         Bundle bundle = new Bundle();
         bundle.putInt(ViewPagerFragment.KEY_RECIPE_INDEX, index);
@@ -47,6 +50,6 @@ public class MainActivity extends AppCompatActivity implements ListFragment.OnRe
         fragmentTransaction.replace(R.id.placeholder, viewPagerFragment, VIEWPAGER_FRAGMENT);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
-
+*/
     }
 }

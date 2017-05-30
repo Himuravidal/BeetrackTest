@@ -9,11 +9,7 @@ import android.widget.TextView;
 
 import com.example.spaceghost.recipefragments.ListFragment;
 import com.example.spaceghost.recipefragments.R;
-import com.example.spaceghost.recipefragments.Recipes;
-import com.example.spaceghost.recipefragments.data.PendigsData;
-import com.example.spaceghost.recipefragments.models.Pending;
-
-import java.util.List;
+import com.example.spaceghost.recipefragments.data.Recipes;
 
 /**
  * Created by spaceghost on 29-01-15.
@@ -21,7 +17,6 @@ import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter {
 
-    private List<Pending> pendings = new PendigsData().notDone();
 
     private final ListFragment.OnRecipeSelectedInterface mListener;
 
@@ -68,8 +63,6 @@ public class ListAdapter extends RecyclerView.Adapter {
             mIndex = position;
             mTextView.setText(Recipes.names[position]);
             mImageView.setImageResource(Recipes.resourceIds[position]);
-
-
         }
 
         @Override

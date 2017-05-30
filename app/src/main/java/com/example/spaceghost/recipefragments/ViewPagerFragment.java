@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.spaceghost.recipefragments.data.Recipes;
+
 /**
  * Created by spaceghost on 29-01-15.
  */
@@ -21,14 +23,13 @@ public class ViewPagerFragment extends Fragment {
 
   @Nullable
   @Override
-
   public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
     int index = getArguments().getInt(KEY_RECIPE_INDEX);
     getActivity().setTitle(Recipes.names[index]);
     View view = inflater.inflate(R.layout.fragment_viewpager, container, false);
 
-    final IngredientsFragmentClass ingredientsFragment = new IngredientsFragmentClass();
+    final IngredientsFragment ingredientsFragment = new IngredientsFragment();
     Bundle bundle = new Bundle();
     bundle.putInt(KEY_RECIPE_INDEX, index);
 
