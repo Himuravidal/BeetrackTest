@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.spaceghost.recipefragments.adapters.PagerAdapter;
+import com.example.spaceghost.recipefragments.data.Recipes;
 
 public class DetailsActivity extends AppCompatActivity {
 
@@ -22,6 +23,7 @@ public class DetailsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         int index = getIntent().getIntExtra(IndexFragment.INDEX, 0);
+        getSupportActionBar().setTitle(Recipes.names[index]);
 
         PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), index);
 
