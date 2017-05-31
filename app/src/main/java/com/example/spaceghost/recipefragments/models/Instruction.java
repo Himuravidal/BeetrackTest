@@ -6,13 +6,14 @@ import com.orm.SugarRecord;
  * Created by adacher on 31-05-17.
  */
 
-public class Ingredient extends SugarRecord {
+public class Instruction extends SugarRecord {
 
     private String name;
     private int position;
     private boolean status;
 
-    public Ingredient() {
+
+    public Instruction() {
     }
 
 

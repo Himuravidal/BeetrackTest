@@ -15,9 +15,9 @@ import android.view.ViewGroup;
  * Created by spaceghost on 30-01-15.
  */
 
-public abstract class IndexFragment extends Fragment  {
+public abstract class IndexFragment extends Fragment {
 
-    protected static final String INDEX = "com.example.spaceghost.recipefragments.KEY.INDEX";
+    public static final String INDEX = "com.example.spaceghost.recipefragments.KEY.INDEX";
     protected int index;
     protected RecyclerView recyclerView;
 

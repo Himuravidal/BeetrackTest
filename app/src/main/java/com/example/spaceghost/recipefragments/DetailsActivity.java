@@ -21,7 +21,9 @@ public class DetailsActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), 2);
+        int index = getIntent().getIntExtra(IndexFragment.INDEX, 0);
+
+        PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), index);
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.container);
         viewPager.setAdapter(pagerAdapter);

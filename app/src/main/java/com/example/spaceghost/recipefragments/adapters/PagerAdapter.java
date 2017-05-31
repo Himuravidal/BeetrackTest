@@ -29,7 +29,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return IngredientsFragment.newInstance(index);
             case 1:
-                return DirectionFragment.newInstance();
+                return DirectionFragment.newInstance(index);
 
             default:
                 return IngredientsFragment.newInstance(index);
