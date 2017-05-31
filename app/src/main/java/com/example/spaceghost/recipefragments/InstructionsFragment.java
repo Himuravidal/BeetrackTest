@@ -4,31 +4,37 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-import com.example.spaceghost.recipefragments.adapters.IngredientAdapter;
+import com.example.spaceghost.recipefragments.adapters.InstructionsAdapter;
 
 /**
  * Created by spaceghost on 30-01-15.
  */
 
-public class IngredientsFragment extends IndexFragment {
+public class InstructionsFragment extends IndexFragment {
 
 
-    public IngredientsFragment() {
+    public InstructionsFragment() {
     }
 
-    public static IngredientsFragment newInstance(int index) {
-        IngredientsFragment ingredientsFragment = new IngredientsFragment();
+    public static InstructionsFragment newInstance(int index) {
+        InstructionsFragment instructionsFragment = new InstructionsFragment();
         Bundle args = new Bundle();
         args.putInt(INDEX, index);
-        ingredientsFragment.setArguments(args);
-        return ingredientsFragment;
+        instructionsFragment.setArguments(args);
+        return instructionsFragment;
+
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        IngredientAdapter adapter = new IngredientAdapter(index);
+
+        InstructionsAdapter adapter = new InstructionsAdapter(index);
         recyclerView.setAdapter(adapter);
+
+
     }
+
+
 }

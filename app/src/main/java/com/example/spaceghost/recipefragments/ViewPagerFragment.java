@@ -35,7 +35,7 @@ public class ViewPagerFragment extends Fragment {
 
     ingredientsFragment.setArguments(bundle);
 
-    final DirectionFragment directionsFragment = new DirectionFragment();
+    final InstructionsFragment directionsFragment = new InstructionsFragment();
     bundle = new Bundle();
     bundle.putInt(KEY_RECIPE_INDEX, index);
 

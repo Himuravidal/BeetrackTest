@@ -3,7 +3,6 @@ package com.example.spaceghost.recipefragments.data;
 import com.example.spaceghost.recipefragments.models.Instruction;
 import com.orm.SugarRecord;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,14 +12,8 @@ import java.util.List;
 public class InstructionsData extends SugarRecord {
 
 
-    public List<Instruction> notDone() {
-        List<Instruction> pendings = new ArrayList<>();
-        List<Instruction> pendingList = Instruction.find(Instruction.class, "done=0");
-        if (pendingList != null && pendingList.size() > 0) {
-            pendings.addAll(pendingList);
-        }
-
-        return pendings;
+    public List<Instruction> byPosition(int position) {
+        return Instruction.find(Instruction.class, "position = ?", String.valueOf(position));
     }
 
     public void seedData() {

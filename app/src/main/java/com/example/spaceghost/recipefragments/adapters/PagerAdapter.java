@@ -4,8 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.example.spaceghost.recipefragments.DirectionFragment;
 import com.example.spaceghost.recipefragments.IngredientsFragment;
+import com.example.spaceghost.recipefragments.InstructionsFragment;
 
 /**
  * Created by adacher on 29-05-17.
@@ -21,7 +21,6 @@ public class PagerAdapter extends FragmentPagerAdapter {
     }
 
 
-
     @Override
     public Fragment getItem(int position) {
 
@@ -29,7 +28,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return IngredientsFragment.newInstance(index);
             case 1:
-                return DirectionFragment.newInstance(index);
+                return InstructionsFragment.newInstance(index);
 
             default:
                 return IngredientsFragment.newInstance(index);

@@ -26,16 +26,13 @@ public class ListAdapter extends RecyclerView.Adapter {
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_recipe, parent, false);
         return new ListViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         ((ListViewHolder) holder).bindView(position);
-
-
-
 
 
     }

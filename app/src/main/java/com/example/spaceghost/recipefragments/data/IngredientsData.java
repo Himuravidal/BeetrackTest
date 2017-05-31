@@ -2,7 +2,6 @@ package com.example.spaceghost.recipefragments.data;
 
 import com.example.spaceghost.recipefragments.models.Ingredient;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,14 +11,8 @@ import java.util.List;
 public class IngredientsData {
 
 
-    public List<Ingredient> notDone() {
-        List<Ingredient> pendings = new ArrayList<>();
-        List<Ingredient> pendingList = Ingredient.find(Ingredient.class, "done=0");
-        if (pendingList != null && pendingList.size() > 0) {
-            pendings.addAll(pendingList);
-        }
-
-        return pendings;
+    public List<Ingredient> byPosition(int position) {
+        return Ingredient.find(Ingredient.class, "position = ?", String.valueOf(position));
     }
 
     public void seedData() {

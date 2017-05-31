@@ -38,7 +38,6 @@ public abstract class IndexFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         recyclerView = (RecyclerView) view;
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setHasFixedSize(true);
         recyclerView.addItemDecoration(new DividerItemDecoration(getContext(), LinearLayoutManager.VERTICAL));
     }
 }
