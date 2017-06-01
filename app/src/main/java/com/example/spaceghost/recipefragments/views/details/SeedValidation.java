@@ -1,4 +1,4 @@
-package com.example.spaceghost.recipefragments;
+package com.example.spaceghost.recipefragments.views.details;
 
 import com.example.spaceghost.recipefragments.data.IngredientsData;
 import com.example.spaceghost.recipefragments.data.InstructionsData;

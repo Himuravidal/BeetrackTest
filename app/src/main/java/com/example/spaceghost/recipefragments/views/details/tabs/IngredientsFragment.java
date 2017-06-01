@@ -1,10 +1,10 @@
-package com.example.spaceghost.recipefragments;
+package com.example.spaceghost.recipefragments.views.details.tabs;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-import com.example.spaceghost.recipefragments.adapters.IngredientAdapter;
+import com.example.spaceghost.recipefragments.adapters.IngredientsAdapter;
 
 /**
  * Created by spaceghost on 30-01-15.
@@ -28,7 +28,7 @@ public class IngredientsFragment extends IndexFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        IngredientAdapter adapter = new IngredientAdapter(index);
+        IngredientsAdapter adapter = new IngredientsAdapter(index);
         recyclerView.setAdapter(adapter);
     }
 }

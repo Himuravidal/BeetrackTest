@@ -55,15 +55,10 @@ public class InstructionsAdapter extends RecyclerView.Adapter<InstructionsAdapte
                         notifyItemChanged(holder.getAdapterPosition());
                     }
                 });
-
-
             }
         });
 
-
-
     }
-
 
     @Override
     public int getItemCount() {
@@ -77,13 +72,10 @@ public class InstructionsAdapter extends RecyclerView.Adapter<InstructionsAdapte
 
         public ViewHolder(View itemView) {
             super(itemView);
-
             status = (CheckBox) itemView.findViewById(R.id.instructionCb);
             textView = (TextView) itemView.findViewById(R.id.instructionTv);
 
-
         }
-
 
     }
 }

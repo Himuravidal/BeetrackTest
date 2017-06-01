@@ -4,8 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.example.spaceghost.recipefragments.IngredientsFragment;
-import com.example.spaceghost.recipefragments.InstructionsFragment;
+import com.example.spaceghost.recipefragments.views.details.tabs.IngredientsFragment;
+import com.example.spaceghost.recipefragments.views.details.tabs.InstructionsFragment;
 
 /**
  * Created by adacher on 29-05-17.

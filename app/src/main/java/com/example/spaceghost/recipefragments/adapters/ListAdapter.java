@@ -7,9 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.spaceghost.recipefragments.ListFragment;
 import com.example.spaceghost.recipefragments.R;
 import com.example.spaceghost.recipefragments.data.Recipes;
+import com.example.spaceghost.recipefragments.views.main.ListFragment;
 
 /**
  * Created by spaceghost on 29-01-15.

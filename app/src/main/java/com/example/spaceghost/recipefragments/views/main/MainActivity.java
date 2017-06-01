@@ -1,9 +1,14 @@
-package com.example.spaceghost.recipefragments;
+package com.example.spaceghost.recipefragments.views.main;
 
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.example.spaceghost.recipefragments.R;
+import com.example.spaceghost.recipefragments.views.details.DetailsActivity;
+import com.example.spaceghost.recipefragments.views.details.SeedValidation;
+import com.example.spaceghost.recipefragments.views.details.tabs.IndexFragment;
 
 public class MainActivity extends AppCompatActivity implements ListFragment.OnRecipeSelectedInterface {
 

@@ -19,12 +19,12 @@ import java.util.List;
  * Created by adacher on 31-05-17.
  */
 
-public class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.ViewHolder> {
+public class IngredientsAdapter extends RecyclerView.Adapter<IngredientsAdapter.ViewHolder> {
 
     private List<Ingredient> ingredients;
 
 
-    public IngredientAdapter(int position) {
+    public IngredientsAdapter(int position) {
 
         ingredients = new IngredientsData().byPosition(position);
 

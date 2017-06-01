@@ -12,10 +12,8 @@ public class Instruction extends SugarRecord {
     private int position;
     private boolean status;
 
-
     public Instruction() {
     }
-
 
     public String getName() {
         return name;

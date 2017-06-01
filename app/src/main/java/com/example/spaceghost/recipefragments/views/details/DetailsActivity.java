@@ -1,4 +1,4 @@
-package com.example.spaceghost.recipefragments;
+package com.example.spaceghost.recipefragments.views.details;
 
 
 import android.os.Bundle;
@@ -9,8 +9,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.spaceghost.recipefragments.R;
 import com.example.spaceghost.recipefragments.adapters.PagerAdapter;
 import com.example.spaceghost.recipefragments.data.Recipes;
+import com.example.spaceghost.recipefragments.views.details.tabs.IndexFragment;
 
 public class DetailsActivity extends AppCompatActivity {
 

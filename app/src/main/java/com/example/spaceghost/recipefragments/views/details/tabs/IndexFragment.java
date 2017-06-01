@@ -1,4 +1,4 @@
-package com.example.spaceghost.recipefragments;
+package com.example.spaceghost.recipefragments.views.details.tabs;
 
 
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.spaceghost.recipefragments.R;
 
 /**
  * Created by spaceghost on 30-01-15.

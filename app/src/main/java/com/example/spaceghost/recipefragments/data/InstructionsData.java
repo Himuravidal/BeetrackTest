@@ -1,7 +1,6 @@
 package com.example.spaceghost.recipefragments.data;
 
 import com.example.spaceghost.recipefragments.models.Instruction;
-import com.orm.SugarRecord;
 
 import java.util.List;
 
@@ -9,8 +8,9 @@ import java.util.List;
  * Created by adacher on 31-05-17.
  */
 
-public class InstructionsData extends SugarRecord {
+public class InstructionsData {
 
+    //List of data ingredients and return value by position
 
     public List<Instruction> byPosition(int position) {
         return Instruction.find(Instruction.class, "position = ?", String.valueOf(position));

@@ -1,4 +1,4 @@
-package com.example.spaceghost.recipefragments;
+package com.example.spaceghost.recipefragments.views.details.tabs;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
